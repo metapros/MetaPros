@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MetaPros | Self-Development eBooks & Digital Growth Guides</title>
+  <meta name="description" content="MetaPros is the leading digital store for actionable self-development. Instantly access premium eBooks and guides for smart income, financial growth, and mastering high-value skills. Invest in yourself and unlock your true potential today!"/>
+  <meta name="keywords" content="digital products, self-development, eBooks, smart income, financial growth, skill mastery, online learning, personal growth, wealth building, career development, guides, digital store"/>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.metapros.store/" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.ibb.co/KpbWpxVf/METAPROS-LOGO.png" type="image/png" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="MetaPros | Self-Development eBooks & Digital Growth Guides" />
+  <meta property="og:description" content="Empowering your personal, professional, and financial journey through high-value eBooks, practical guides, and smart tools. Instantly boost your growth!" />
+  <meta property="og:url" content="https://www.metapros.store/" />
+  <meta property="og:image" content="https://i.ibb.co/XZ5GvWKZ/E-Commerce-Strategies.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MetaPros" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MetaPros | Self-Development eBooks & Digital Growth Guides" />
+  <meta name="twitter:description" content="Empowering your journey with high-value eBooks and guides for smart income and personal growth." />
+  <meta name="twitter:image" content="https://i.ibb.co/XZ5GvWKZ/E-Commerce-Strategies.png" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "MetaPros",
+    "description": "Your global digital store for actionable self-development eBooks and guides.",
+    "url": "https://www.metapros.store",
+    "sameAs": [
+      "#", "#", "#", "#"
+    ],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.metapros.store/shop?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #F1C232;
+      --dark: #111;
+      --dark-alt: #1a1a1a;
+      --gray: #ccc;
+      --text: #fff;
+    }
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body { 
+      margin:0; 
+      font-family: 'Arimo', sans-serif; 
+      background-color: var(--dark); 
+      color: var(--text); 
+      overflow-x:hidden; 
+    }
+    .hero-section { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; }
+    #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; }
+    .hero-content h1 { font-family: 'Spectral', serif; font-size: 3.5rem; color: var(--text); margin: 0; }
+    .hero-content h1 .highlight { color: var(--gold); }
+    .hero-content p { font-size: 1.2rem; color: var(--gray); margin: 20px 0 30px 0; line-height: 1.7; }
+    .cta-button { background-color: var(--gold); color: var(--dark); padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 700; transition: all 0.3s ease; border: none; cursor: pointer; }
+    .cta-button:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(241,194,50, 0.3); }
+    section { padding: 100px 5%; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; color: var(--gold); font-family:'Spectral', serif; margin-bottom: 50px; font-size: 2.2rem; }
+    .cards-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+    .card { background: var(--dark-alt); border: 1px solid #222; border-radius: 10px; padding: 30px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; flex: 1 1 280px; max-width: 350px; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); border-color: var(--gold); }
+    .card-link { text-decoration: none; color: inherit; }
+    .card .icon { font-size: 3rem; color: var(--gold); margin-bottom: 20px; }
+    .card h3 { font-family: 'Spectral', serif; font-size: 1.5rem; margin-bottom: 15px; color: var(--text); }
+    .card p { color: var(--gray); font-size: 1rem; line-height: 1.6; }
+    .featured-product { display: grid; grid-template-columns: 1fr 2fr; align-items: center; gap: 50px; background-color: var(--dark-alt); padding: 50px; border-radius: 15px; }
+    .featured-icon-container { text-align: center; }
+    .featured-product-image {
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+    }
+    .featured-product-details { text-align: left; }
+    .featured-product-details h3 { font-family: 'Spectral', serif; font-size: 2.5rem; color: var(--gold); }
+    .featured-product-details ul { list-style: none; padding: 0; margin: 20px 0; }
+    .featured-product-details ul li { margin-bottom: 10px; padding-left: 25px; position: relative; color: var(--gray); }
+    .featured-product-details ul li::before { font-family: "Font Awesome 6 Free"; content: '\f00c'; font-weight: 900; color: var(--gold); position: absolute; left: 0; }
+    .how-it-works { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center; }
+    .how-step { max-width: 250px; flex: 1 1 200px; }
+    .how-step .icon { background-color: var(--dark-alt); border: 2px solid #333; width: 100px; height: 100px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+    .how-step h3 { font-size: 1.3rem; color: var(--text); }
+    .newsletter { background-color: var(--dark-alt); padding: 60px; border-radius: 15px; text-align: center; }
+    .newsletter p { max-width: 600px; margin: -40px auto 30px auto; color: var(--gray); }
+    .newsletter-form { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .newsletter-form input { width: 100%; max-width: 350px; padding: 12px; border: 1px solid #333; border-radius: 6px; background-color: #222; color: var(--text); font-family: 'Arimo', sans-serif; font-size: 1rem; }
+    .testimonial-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .testimonial { background-color: var(--dark-alt); padding: 40px; border-radius: 10px; border-left: 5px solid var(--gold); text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+    .testimonial blockquote { margin: 0; font-size: 1.1rem; font-style: italic; color: var(--gray); flex-grow: 1; }
+    .testimonial cite { display: block; margin-top: 20px; font-weight: 700; color: var(--text); }
+    .social-links-footer {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      z-index: 2;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--dark-alt);
+      color: var(--gold);
+      font-size: 2rem;
+      border: 2px solid #222;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      text-decoration: none;
+      transition: transform 0.25s, box-shadow 0.25s, color 0.2s, background 0.2s;
+      will-change: transform;
+      position: relative;
+      overflow: hidden;
+    }
+    .social-link:hover {
+      background: var(--gold);
+      color: var(--dark);
+      transform: translateY(-5px) scale(1.08) rotate(-3deg);
+      box-shadow: 0 4px 20px rgba(241,194,50, 0.17);
+    }
+    .social-link:active { transform: scale(0.97); }
+    footer { background: #000; color: var(--gray); text-align: center; padding: 25px 20px; border-top: 1px solid #222; font-size: 1rem; }
+    footer p { white-space: nowrap; }
+    @media(max-width: 900px) { .hero-content h1 { font-size: 2.5rem; } h2 { font-size: 2.2rem; } .featured-product, .how-it-works { grid-template-columns: 1fr; flex-direction: column; text-align: center; } .featured-product-details { text-align: center; } .how-it-works { align-items: center; } .featured-product-image { max-width: 180px; } }
+    @media(max-width: 600px) { .hero-content h1 { font-size: 2rem; } .hero-content p { font-size: 1rem; } .newsletter-form { flex-direction: column; } .featured-product { padding: 30px; } .featured-product-details h3 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+<section class="hero-section">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+        <h1 data-aos="fade-down">Unlock Your <span class="highlight">True Potential</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200">Empowering your personal, professional, and financial journey through high-value <strong>self-development eBooks</strong>, practical guides, and smart tools.</p>
+        <a href="https://www.metapros.store/shop" target="_blank" rel="noopener noreferrer" class="cta-button" data-aos="fade-up" data-aos-delay="400">Explore The Library</a>
+    </div>
+</section>
+
+<main>
+    <section id="about" data-aos="fade-up">
+        <div style="text-align: center; max-width: 800px; margin: auto;">
+             <h2 style="font-family: 'Spectral', serif; color: var(--gold); margin-bottom: 30px; font-size: 2.2rem;">A Store Built for <span style="color: var(--gold);">Growth</span></h2>
+             <p style="font-size: 1.1rem; color: var(--gray); font-family: 'Arimo', sans-serif;">
+                MetaPros is a global <strong>digital store</strong> delivering premium self-development content. We believe knowledge should be affordable, practical, and instantly accessible. Our mission is to provide actionable eBooks and interactive tools aimed at <span style="color:var(--gray)">career mastery</span>, mindful living, and financial clarity, helping you build the life you envision.
+             </p>
+        </div>
+    </section>
+    
+    <section id="products" data-aos="fade-up">
+        <h2>Our eBook Library</h2>
+        <div class="cards-container">
+            <a href="https://www.metapros.store/shop/smart-income" target="_blank" rel="noopener noreferrer" class="card-link">
+                <div class="card"><div class="icon"><i class="fas fa-rocket"></i></div><h3>Smart Income</h3><p>Powerful <strong>eBooks</strong> on affiliate marketing, AI automation, dropshipping, and building modern revenue streams.</p></div>
+            </a>
+            <a href="https://www.metapros.store/shop/skills-mastery" target="_blank" rel="noopener noreferrer" class="card-link">
+                <div class="card"><div class="icon"><i class="fas fa-award"></i></div><h3>Skills Mastery</h3><p>Practical guides on freelancing, prompt engineering, remote work, and other essential in-demand skills.</p></div>
+            </a>
+            <a href="https://www.metapros.store/shop/trading-wealth" target="_blank" rel="noopener noreferrer" class="card-link">
+                <div class="card"><div class="icon"><i class="fas fa-chart-line"></i></div><h3>Trading & Wealth</h3><p>Essential eBooks on cryptocurrency, smart investing, and foundational trading strategies.</p></div>
+            </a>
+            <a href="https://www.metapros.store/shop/digital-life" target="_blank" rel="noopener noreferrer" class="card-link">
+                <div class="card"><div class="icon"><i class="fas fa-globe"></i></div><h3>Digital Life</h3><p>Guides to mastering social media, personal branding, productivity, and digital wellness.</p></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="featured" data-aos="fade-up">
+        <h2>Featured Products</h2>
+        <div class="featured-product">
+            <div class="featured-icon-container">
+                <img src="https://i.ibb.co/XZ5GvWKZ/E-Commerce-Strategies.png" alt="E-Commerce Strategies for 2025 eBook Cover by MetaPros - digital self-development" class="featured-product-image">
+            </div>
+            <div class="featured-product-details">
+                <h3>E-Commerce: Strategies for 2025</h3>
+                <p>Master online retail with cutting-edge strategies. This guide covers everything from market analysis to scaling your operations.</p>
+                <ul>
+                    <li>Explore next-gen E-Commerce trends.</li>
+                    <li>Optimize your store for maximum conversion.</li>
+                    <li>Leverage AI in customer service and marketing.</li>
+                    <li>Build a resilient and scalable brand.</li>
+                </ul>
+                <a href="https://www.metapros.store/smart-income-prod/e-commerce-strategies-for-2025" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="featured-product" style="margin-top: 40px;">
+            <div class="featured-icon-container">
+                <img src="https://i.ibb.co/HfP9Z6FD/Invest-In-Cryptocurrency-Smartly-1.png" alt="Invest In Cryptocurrency Smartly - Premium Investing Guide eBook" class="featured-product-image">
+            </div>
+            <div class="featured-product-details">
+                <h3>Invest In Cryptocurrency Smartly</h3>
+                <p>Navigate the volatile crypto market with confidence. This eBook provides a fundamental framework for smart, long-term investing.</p>
+                <ul>
+                    <li>Understand blockchain fundamentals.</li>
+                    <li>Learn risk management techniques.</li>
+                    <li>Identify promising long-term assets.</li>
+                    <li>Secure your digital wallet effectively.</li>
+                </ul>
+                <a href="https://www.metapros.store/trading-wealth-prod/invest-in-cryptocurrency-smartly" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="how-it-works" data-aos="fade-up">
+        <h2>Get Your Product in 3 Simple Steps</h2>
+        <div class="how-it-works">
+            <div class="how-step" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon"><i class="fas fa-mouse-pointer"></i></div>
+                <h3>1. Choose & Purchase</h3>
+                <p>Browse our library and complete your purchase via our secure checkout.</p>
+            </div>
+            <div class="how-step" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon"><i class="fas fa-credit-card"></i></div>
+                <h3>2. Instant Redirect</h3>
+                <p>After payment, you are instantly redirected to your exclusive content.</p>
+            </div>
+            <div class="how-step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon"><i class="fas fa-book-reader"></i></div>
+                <h3>3. Get Instant Access</h3>
+                <p>Your product is unlocked instantly, ready for you to start your growth journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-promise" data-aos="fade-up">
+        <h2>Our Promise to You</h2>
+        <div class="cards-container">
+            <div class="card"><div class="icon"><i class="fas fa-check-double"></i></div><h3>Quality Guaranteed</h3><p>Every product is expertly crafted, reviewed, and tested to ensure it provides real, actionable value.</p></div>
+            <div class="card"><div class="icon"><i class="fas fa-shield-alt"></i></div><h3>Secure Transactions</h3><p>Your payments are processed through world-class, secure gateways. We never handle your card info.</p></div>
+            <div class="card"><div class="icon"><i class="fas fa-infinity"></i></div><h3>Lifetime Access</h3><p>Your one-time purchase grants you lifetime access to the product, including future updates.</p></div>
+        </div>
+    </section>
+    
+    <section id="testimonial" data-aos="fade-up">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <blockquote>"I've always struggled with budgeting. The books in the Trading & Wealth category were a lifesaver. 'Smart Trading Strategies' was clear, concise, and gave me confidence."</blockquote>
+                <cite>– Michael B., Aspiring Investor</cite>
+            </div>
+            <div class="testimonial">
+                <blockquote>"Feeling lost in my career, but the Skills Mastery collection was a goldmine. The freelancing guides in particular gave me the exact roadmap I needed to get started."</blockquote>
+                <cite>– Jessica Lee, Web Developer</cite>
+            </div>
+            <div class="testimonial">
+                <blockquote>"The AI Side Hustle Blueprint wasn't just theory it's a practical roadmap that helped me launch a new income stream in weeks. The value for the price is incredible."</blockquote>
+                <cite>– Tom H., Entrepreneur</cite>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter" data-aos="fade-up">
+        <div class="newsletter">
+            <h2>Join Our Community</h2>
+            <p>Get exclusive access to new product launches, special discounts, and free growth tips delivered directly to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" name="email" placeholder="Enter your email address..." required aria-label="Email Address">
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+            <p id="form-message" style="margin-top: 15px; color: var(--gold);"></p>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up" style="text-align: center;">
+        <h2>Have a Question?</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px auto;">We're here to help. Whether you have a query about a product or need a custom bundle, feel free to reach out.</p>
+        <a href="https://www.metapros.store/contact" target="_blank" rel="noopener noreferrer" class="cta-button">Contact Us</a>
+    </section>
+</main>
+
+<!-- Social Links (Start) -->
+<div class="social-links-footer" data-aos="fade-up" data-aos-delay="150">
+    <a class="social-link" href="#" target="_blank" rel="noopener me" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a class="social-link" href="#" target="_blank" rel="noopener me" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a class="social-link" href="#" target="_blank" rel="noopener me" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a class="social-link" href="#" target="_blank" rel="noopener me" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+</div>
+<!-- Social Links (End) -->
+
+<footer>
+  <p>&copy; 2025 MetaPros. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, duration: 800, offset: 100 });
+
+    particlesJS('particles-js', {
+        "particles": { "number": { "value": 60, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle" }, "opacity": { "value": 0.5, "random": true }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#F1C232", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1.5, "direction": "none", "random": true, "straight": false, "out_mode": "out" } },
+        "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": false }, "resize": true }, "modes": { "repulse": { "distance": 100, "duration": 0.4 } } },
+        "retina_detect": true
+    });
+    
+    const newsletterForm = document.getElementById('newsletterForm');
+    const formMessage = document.getElementById('form-message');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIKO95SUUJP1oVH4viYt1yObo37Ggc_mPxoGq8TdaSkGQ0bLHKxEeGb2vmn8bJvKVk/exec';
+    newsletterForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const submitButton = newsletterForm.querySelector('button');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Subscribing...';
+        fetch(scriptURL, { method: 'POST', body: new FormData(newsletterForm)})
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    formMessage.textContent = 'Thank you for subscribing!';
+                    formMessage.style.color = 'var(--gold)';
+                    newsletterForm.reset();
+                } else { throw new Error(data.error || 'An unknown error occurred.'); }
+            })
+            .catch(error => {
+                formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+                formMessage.style.color = '#ff4d4d';
+                console.error('Error!', error.message);
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Subscribe';
+            });
+    });
+</script>
+</body>
+</html>
