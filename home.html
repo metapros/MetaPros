@@ -65,6 +65,14 @@
       color: var(--text); 
       overflow-x:hidden; 
     }
+    /* Navbar styles */
+    nav { background:var(--dark); border-bottom:1px solid #222; position:sticky;top:0;z-index:99; }
+    nav div { max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;}
+    nav a { color:var(--gold); text-decoration:none; font-weight:bold; font-size:1.2rem;}
+    nav ul { display:flex; gap:26px; list-style:none; margin:0; padding:0;}
+    nav ul li a { color:var(--text); font-weight:700; text-decoration:none;}
+    nav ul li a:hover { color:var(--gold); }
+    /* ... باقي ستايل الصفحة كما أرسلته ... */
     .hero-section { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; }
     #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
     .hero-content { position: relative; z-index: 2; max-width: 800px; }
@@ -150,12 +158,29 @@
 </head>
 <body>
 
+<!-- Navbar (added only here) -->
+<nav>
+  <div>
+    <a href="home.html"><img src="https://i.ibb.co/KpbWpxVf/METAPROS-LOGO.png" alt="MetaPros Logo" style="height:34px;vertical-align:middle;margin-right:8px;">MetaPros</a>
+    <ul>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="bundle.html">Bundle</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->
+
 <section class="hero-section">
     <div id="particles-js"></div>
     <div class="hero-content">
         <h1 data-aos="fade-down">Unlock Your <span class="highlight">True Potential</span></h1>
         <p data-aos="fade-up" data-aos-delay="200">Empowering your personal, professional, and financial journey through high-value <strong>self-development eBooks</strong>, practical guides, and smart tools.</p>
-        <a href="https://www.metapros.store/shop" target="_blank" rel="noopener noreferrer" class="cta-button" data-aos="fade-up" data-aos-delay="400">Explore The Library</a>
+        <a href="shop.html" class="cta-button" data-aos="fade-up" data-aos-delay="400">Explore The Library</a>
     </div>
 </section>
 
@@ -172,16 +197,16 @@
     <section id="products" data-aos="fade-up">
         <h2>Our eBook Library</h2>
         <div class="cards-container">
-            <a href="https://www.metapros.store/shop/smart-income" target="_blank" rel="noopener noreferrer" class="card-link">
+            <a href="shop.html#smart-income" class="card-link">
                 <div class="card"><div class="icon"><i class="fas fa-rocket"></i></div><h3>Smart Income</h3><p>Powerful <strong>eBooks</strong> on affiliate marketing, AI automation, dropshipping, and building modern revenue streams.</p></div>
             </a>
-            <a href="https://www.metapros.store/shop/skills-mastery" target="_blank" rel="noopener noreferrer" class="card-link">
+            <a href="shop.html#skills-mastery" class="card-link">
                 <div class="card"><div class="icon"><i class="fas fa-award"></i></div><h3>Skills Mastery</h3><p>Practical guides on freelancing, prompt engineering, remote work, and other essential in-demand skills.</p></div>
             </a>
-            <a href="https://www.metapros.store/shop/trading-wealth" target="_blank" rel="noopener noreferrer" class="card-link">
+            <a href="shop.html#trading-wealth" class="card-link">
                 <div class="card"><div class="icon"><i class="fas fa-chart-line"></i></div><h3>Trading & Wealth</h3><p>Essential eBooks on cryptocurrency, smart investing, and foundational trading strategies.</p></div>
             </a>
-            <a href="https://www.metapros.store/shop/digital-life" target="_blank" rel="noopener noreferrer" class="card-link">
+            <a href="shop.html#digital-life" class="card-link">
                 <div class="card"><div class="icon"><i class="fas fa-globe"></i></div><h3>Digital Life</h3><p>Guides to mastering social media, personal branding, productivity, and digital wellness.</p></div>
             </a>
         </div>
@@ -202,7 +227,7 @@
                     <li>Leverage AI in customer service and marketing.</li>
                     <li>Build a resilient and scalable brand.</li>
                 </ul>
-                <a href="https://www.metapros.store/smart-income-prod/e-commerce-strategies-for-2025" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
+                <a href="shop.html#smart-income" class="cta-button">Learn More</a>
             </div>
         </div>
 
@@ -219,7 +244,7 @@
                     <li>Identify promising long-term assets.</li>
                     <li>Secure your digital wallet effectively.</li>
                 </ul>
-                <a href="https://www.metapros.store/trading-wealth-prod/invest-in-cryptocurrency-smartly" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More</a>
+                <a href="shop.html#trading-wealth" class="cta-button">Learn More</a>
             </div>
         </div>
     </section>
@@ -287,7 +312,7 @@
     <section id="contact" data-aos="fade-up" style="text-align: center;">
         <h2>Have a Question?</h2>
         <p style="max-width: 600px; margin: 0 auto 30px auto;">We're here to help. Whether you have a query about a product or need a custom bundle, feel free to reach out.</p>
-        <a href="https://www.metapros.store/contact" target="_blank" rel="noopener noreferrer" class="cta-button">Contact Us</a>
+        <a href="contact.html" class="cta-button">Contact Us</a>
     </section>
 </main>
 
